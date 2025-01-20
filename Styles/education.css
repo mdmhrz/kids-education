@@ -71,7 +71,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -80,6 +80,8 @@ header .logo {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    cursor: pointer;
+    user-select: none;
 }
 
 header .logo span {
@@ -118,6 +120,14 @@ header .logo span {
 
     nav,
     .contanct-btn-container {
+        display: none;
+    }
+
+    header {
+        border-bottom: 1.5px solid var(--primary-color);
+    }
+
+    header .logo>span {
         display: none;
     }
 }
