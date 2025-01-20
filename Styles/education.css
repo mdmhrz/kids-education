@@ -116,10 +116,10 @@ header .logo span {
 /* Responsive Style through Media Query Rules */
 @media screen and (max-width: 576px) {
 
-    /* nav,
+    nav,
     .contanct-btn-container {
         display: none;
-    } */
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
