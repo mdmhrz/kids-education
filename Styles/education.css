@@ -3,6 +3,10 @@
 :root {
     --primary-color: rgba(254, 163, 1, 1);
     --secondary-color: rgba(1, 172, 253, 1);
+    --third-color: rgba(5, 212, 223, 1);
+    --fourth-color: rgba(135, 0, 255, 1);
+    --paragraph-color: rgba(128, 128, 128, 1);
+    --paragraph-f-size: .9rem;
 }
 
 * {
@@ -19,6 +23,7 @@
     font-weight: 700;
 }
 
+/* Primary Button Styling */
 .btn-primary {
     padding: 15px 50px;
     font-size: 1.2rem;
@@ -27,9 +32,19 @@
     border: none;
     background-color: var(--primary-color);
     color: white;
+    cursor: pointer;
+    transition: box-shadow .5s, transform .2s;
 }
 
+.btn-primary:hover {
+    box-shadow: rgba(66, 58, 35, 0.4) 0 4px 8px, rgba(66, 52, 35, 0.3) 0 7px 13px -3px, #e0933c 0 -3px 0 inset;
 
+}
+
+.btn-primary:active {
+    box-shadow: var(--primary-color) 0 3px 7px inset;
+    transform: translateY(2px);
+}
 
 
 
@@ -55,7 +70,10 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
+
 
 header .logo {
     display: flex;
@@ -67,4 +85,53 @@ header .logo {
 header .logo span {
     font-size: 2rem;
     font-weight: 700;
+}
+
+#menu::before {
+    content: '\2630';
+    font-size: 2em;
+    color: var(--paragraph-color);
+    cursor: pointer;
+}
+
+.home-link {
+    color: var(--primary-color);
+}
+
+.about-link {
+    color: var(--secondary-color);
+}
+
+.facilities-link {
+    color: var(--third-color);
+}
+
+.admission-link {
+    color: var(--fourth-color);
+}
+
+
+
+
+/* Responsive Style through Media Query Rules */
+@media screen and (max-width: 576px) {
+
+    /* nav,
+    .contanct-btn-container {
+        display: none;
+    } */
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    nav,
+    .contanct-btn-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    #menu {
+        display: none;
+    }
 }
