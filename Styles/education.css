@@ -252,34 +252,38 @@ header .logo span {
     color: var(--fourth-color);
 }
 
-.curriculum-nav {
+
+.c-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    column-gap: 20px;
 }
 
-.c-nav {
-    background-color: var(--primary-color);
+.curriculum-nav button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.c-nav:active {
-    opacity: .7;
-}
-
-.c-nav a {
-    text-decoration: none;
-    color: white;
+    padding: 30px;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+
+}
+
+.c-nav-1,
+.c-nav-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.c-nav-1:active,
+.c-nav-2:active {
+    opacity: .7;
 }
 
 /* styling for Stories Section */
@@ -424,13 +428,6 @@ footer {
     margin-right: 15px;
     font-size: 2rem;
 }
-
-
-
-
-
-
-
 
 
 
