@@ -24,8 +24,10 @@ body {
 
 /* Shared Styles */
 
-main {
-    padding: 0 7%;
+#hero,
+#curriculum,
+#stories {
+    padding: 30px 7%;
 }
 
 .section-title {
@@ -172,12 +174,12 @@ header .logo span {
 }
 
 #curriculum {
-    padding: 50px 0;
     text-align: center;
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-bottom: 40px;
 }
 
 .curriculum-card-container {
@@ -235,6 +237,7 @@ header .logo span {
 .curriculum-card p {
     color: var(--paragraph-color);
     font-size: .9rem;
+    line-height: 27px;
 }
 
 .c-card-1 a {
@@ -279,11 +282,102 @@ header .logo span {
     font-size: 1.2rem;
 }
 
+/* styling for Stories Section */
+
+#stories {
+    background-image: url("../assets/bg.png"), url("../assets/bg.png"), linear-gradient(to top, rgba(254, 163, 1, .3), rgba(255, 255, 255, 1));
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: bottom right, top left;
+    background-size: contain;
+    text-align: center;
+}
+
+#stories>h1 {
+    margin-bottom: 80px;
+}
+
+
+.stories-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#stories img {
+    width: 100%;
+}
+
+.story-small-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-large,
+.story {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.story-titles {
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.story-titles span {
+    position: relative;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    top: -32px;
+    font-size: .9rem;
+}
+
+#date-1 {
+    background-color: var(--third-color);
+}
+
+#date-2 {
+    background-color: var(--fourth-color);
+}
+
+#date-3 {
+    background-color: var(--primary-color);
+}
+
+#date-4 {
+    background-color: steelblue;
+}
+
+#stories>button {
+    background-color: black;
+    margin-top: 80px;
+}
+
+
+
+
+
+
 
 
 
 
 /* Responsive Style through Media Query Rules */
+@media screen and (max-width: 450px) {
+    .story-small-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 @media screen and (max-width: 576px) {
 
     nav,
@@ -313,6 +407,14 @@ header .logo span {
     }
 
     .curriculum-nav {
+        display: none;
+    }
+
+    .stories-container {
+        grid-template-columns: 1fr;
+    }
+
+    .story-large {
         display: none;
     }
 }
