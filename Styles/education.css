@@ -437,11 +437,11 @@ footer {
 .social-links-container i {
     background-color: white;
     color: var(--secondary-color);
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
     margin-right: 15px;
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -515,8 +515,29 @@ footer {
         display: none;
     }
 
-    .hero-titles {
-        max-width: 400px;
+    #hero {
+        flex-direction: column-reverse;
+    }
+
+    .curriculum-card-container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .c-nav {
+        display: none;
+    }
+
+    .stories-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        gap: 50px;
+    }
+
+    .author {
+        max-width: 300px;
     }
 }
 
