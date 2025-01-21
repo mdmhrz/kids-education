@@ -524,6 +524,10 @@ footer {
         row-gap: 30px;
     }
 
+    .hero-titles {
+        text-align: center;
+    }
+
     .c-nav {
         display: none;
     }
@@ -538,6 +542,12 @@ footer {
 
     .author {
         max-width: 300px;
+    }
+
+    .curriculum-card {
+        max-width: 600px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
