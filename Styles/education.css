@@ -167,6 +167,61 @@ header .logo span {
     background-color: rgba(0, 0, 0, 0.864);
 }
 
+/* Styling for Latest Updates Section */
+
+#latest-updates {
+    padding: 0 7%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+}
+
+.update-container {
+    background-color: #08080818;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.updates-title {
+    background-color: orangered;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.updates-scroll-items {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.updates-content {
+    display: inline-block;
+    animation: scroll 30s linear -1s infinite;
+}
+
+.updates-content span {
+    margin-right: 30px;
+    color: orangered;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 /* Styling for Curriculum Section */
 
 #curriculum>h1 {
@@ -373,6 +428,14 @@ header .logo span {
 
 #date-4 {
     background-color: steelblue;
+}
+
+#date-5 {
+    background-color: orangered;
+}
+
+#date-6 {
+    background-color: saddlebrown;
 }
 
 #stories>button {
