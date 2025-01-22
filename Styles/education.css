@@ -178,13 +178,13 @@ header .logo span {
 }
 
 .update-container {
-    background-color: #08080818;
+    background-color: #098fd237;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .updates-title {
-    background-color: orangered;
+    background-color: var(--secondary-color);
     color: white;
     width: 150px;
     padding: 10px;
@@ -192,12 +192,14 @@ header .logo span {
     margin-right: 20px;
     display: inline-block;
     position: relative;
-    z-index: 1;
+    z-index: 3;
+    top: -7px
 }
 
 .updates-scroll-items {
     display: inline-block;
     overflow: hidden;
+    padding: 10px 0px;
 }
 
 .updates-content {
@@ -207,13 +209,17 @@ header .logo span {
 
 .updates-content span {
     margin-right: 30px;
-    color: orangered;
+    color: rgb(23, 165, 241);
     font-weight: bold;
+    position: relative;
+    top: 3px;
+    z-index: 1;
+    padding: 30px 0px;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(70%);
     }
 
     100% {
