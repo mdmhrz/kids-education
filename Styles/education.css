@@ -193,7 +193,8 @@ header .logo span {
     display: inline-block;
     position: relative;
     z-index: 3;
-    top: -7px
+    top: -7px;
+    font-weight: 800;
 }
 
 .updates-scroll-items {
@@ -210,7 +211,7 @@ header .logo span {
 .updates-content span {
     margin-right: 30px;
     color: rgb(23, 165, 241);
-    font-weight: bold;
+    font-weight: 500;
     position: relative;
     top: 7px;
     z-index: 1;
@@ -268,7 +269,8 @@ header .logo span {
 }
 
 .curriculum-card img {
-    width: 40%;
+    width: 130px;
+    height: 130px;
     margin-bottom: 30px;
 }
 
@@ -515,9 +517,13 @@ footer {
 
 
 /* Responsive Style through Media Query Rules */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .story-small-container {
         grid-template-columns: 1fr;
+    }
+
+    #section {
+        padding: 30px 7%;
     }
 
 
@@ -560,6 +566,10 @@ footer {
 
     .stories-container {
         grid-template-columns: 1fr;
+    }
+
+    #stories {
+        padding: 30px 3%;
     }
 
     .story-large {
@@ -612,11 +622,7 @@ footer {
         max-width: 300px;
     }
 
-    .curriculum-card {
-        max-width: 600px;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+
 }
 
 @media screen and (min-width: 993px) {
